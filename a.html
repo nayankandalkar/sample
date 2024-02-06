@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .b2{
+        display: none;
+        
+    }
+    .b3{
+
+        display: block;
+    }
+
+</style>
+<body>
+    
+
+<!-- 
+    <section class="blog-area section_padding_100 mt-100">
+        <div class="container">
+
+
+            <div class="row justify-content-center">
+
+                
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-c242a821-bcf3-4fee-b925-91590add17b8"></div>
+
+
+               
+                
+               
+
+                
+            </div>
+          
+        </div>
+    </section> -->
+
+    <h1 id="a" onclick="a2()">abcd</h1>
+
+    <h2 id="visible"  >i am visible </h2>
+
+</body>
+
+<script>
+    let a=document.getElementById("a");
+    let visible= document.getElementById("visible");
+    let b=true;
+    
+    function a2(){
+
+          if(b){
+         visible.classList.add("b2")
+              }else{
+           visible.classList.remove("b2");
+          }
+     b=!b;
+
+
+console.log(a,b,visible );
+     }
+    
+</script>
+</html>
